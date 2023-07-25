@@ -5,11 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call repo
-        uses: convictional/trigger-workflow-and-wait@v1.3.0
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
           owner: vinothramasamy
           repo: GA-ReusableTypeScript 
           github_token: ${{ secrets.REMOTETOKENFORTSRUN }}
           workflow_file_name: action.yml
-          client_payload: '{greetName: `Vinoth`}'
+          client_payload: '{greetName: Vinoth}'
+          trigger_workflow: true
         
