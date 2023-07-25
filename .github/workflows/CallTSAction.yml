@@ -11,6 +11,6 @@ jobs:
           repo: GA-ReusableTypeScript 
           github_token: ${{ secrets.REMOTETOKENFORTSRUN }}
           workflow_file_name: action.yml
-          client_payload: '{greetName: Vinoth}'
+          client_payload: '{greetName: `Vinoth`}'
           trigger_workflow: true
         
